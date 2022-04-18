@@ -13,7 +13,7 @@
 }
 
 .hero-img {
-  max-height: 350px;
+  max-height: 250px;
 }
 
 .banner {
@@ -53,6 +53,9 @@ main .initial_wrapper .title_wrapper #uptitle {
   .banner {
     border-radius: 20px;
   }
+  .hero-img {
+    max-height: 350px;
+  }
 }
 
 footer .footer {
@@ -60,4 +63,66 @@ footer .footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.Purpleman-img {
+  max-height: 350px;
+}
+
+.Redman-img {
+  max-height: 350px;
+}
+
+.Brownman-img {
+  max-height: 350px;
+}
+
+.Greenman-img {
+  max-height: 350px;
+}
+
+  
+.linear-banners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.linear-banners img {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+
+.mini-slider {
+  display: flex; 
+  flex-wrap: nowrap; 
+  overflow-x: scroll;
+}
+
+.mini-slider-item {
+  width: 75%; 
+  flex-shrink: 0;
+}
+
+.mini-slider-item:first-child {
+ margin-left: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .mini-slider-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mini-slider {
+    overflow-x: auto;
+  }
+  .mini-slider-item {
+    width: 25%;
+  }
+  .mini-slider-item:first-child {
+    margin-left: 0;
+   }
 }
